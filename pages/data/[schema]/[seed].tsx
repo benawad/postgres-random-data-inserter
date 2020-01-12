@@ -5,8 +5,8 @@ import { generateInsertStatements } from "../../../utils/generateInsertStatement
 import { isBrowser } from "../../../utils/isBrowser";
 import { withRouter } from "next/router";
 
-const DataGenerator: NextPage = ({ url }: any) => {
-  const { schema, seed } = url.query;
+const DataGenerator: NextPage = ({ router }: any) => {
+  const { schema, seed } = router.query;
   if (!isBrowser()) {
     return null;
   }
