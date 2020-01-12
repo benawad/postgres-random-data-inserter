@@ -12,6 +12,16 @@ const IndexPage: NextPage = () => {
     <Layout title="Postgres Random Data Inserter">
       <div style={{ width: 400, maxWidth: "100%", margin: "auto" }}>
         <h1>Generate Fake Data for your PostgreSQL Database</h1>
+        <p>
+          <a href="/tutorial">click here for tutorial data</a>
+        </p>
+        <div>Supported columns:</div>
+        <ul>
+          <li>text</li>
+          <li>int</li>
+          <li>integer</li>
+          <li>varchar (length ignored)</li>
+        </ul>
         <p>paste tables below.</p>
         <div>
           <textarea
@@ -52,6 +62,10 @@ CREATE TABLE distributors (
           generate data
         </button>
         <span style={{ paddingLeft: "1em", color: "#bb0000" }}>{error}</span>
+
+        <div style={{ marginTop: "10em" }}>
+          used in <a href="#add-youtube-link">Ben Awad's PostgreSQL Tutorial</a>
+        </div>
       </div>
     </Layout>
   );
