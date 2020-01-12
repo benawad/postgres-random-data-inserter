@@ -22,7 +22,7 @@ const colToFakeValue = (c: ColumnInfo) => {
       s = faker.company.bs();
     }
 
-    return `'${s}'`;
+    return `'${s.replace("'", "''")}'`;
   }
 
   throw new Error("unknown dataType: " + c.dataType);
