@@ -15,12 +15,17 @@ const IndexPage: NextPage = () => {
         <p>
           <a href="/tutorial">click here for tutorial data</a>
         </p>
-        <div>Supported columns:</div>
+        <div>Supported data types:</div>
         <ul>
           <li>text</li>
           <li>int</li>
           <li>integer</li>
           <li>varchar (length ignored)</li>
+          <li>
+            <a href="https://github.com/benawad/postgres-random-data-inserter">
+              add new data type
+            </a>
+          </li>
         </ul>
         <p>paste tables below.</p>
         <div>
