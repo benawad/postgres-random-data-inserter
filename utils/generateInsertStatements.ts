@@ -5,6 +5,10 @@ export const generateInsertStatements = (
   base64Schema: string,
   seed: string
 ) => {
+  if (!base64Schema) {
+    return null;
+  }
+
   let seedNum = parseInt(seed);
   const stringSchema = atob(base64Schema);
 
