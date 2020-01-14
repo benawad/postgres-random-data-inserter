@@ -68,8 +68,16 @@ CREATE TABLE distributors (
         </button>
         <span style={{ paddingLeft: "1em", color: "#bb0000" }}>{error}</span>
 
-        <div style={{ marginTop: "10em" }}>
-          used in <a href="#add-youtube-link">Ben Awad's PostgreSQL Tutorial</a>
+        <div style={{ marginTop: "3em" }}>
+          used in{" "}
+          <a href="https://www.youtube.com/watch?v=tp_5c6jaNQE">
+            Ben Awad's PostgreSQL Tutorial
+          </a>
+        </div>
+        <div style={{ marginTop: ".5em" }}>
+          <a href="https://github.com/benawad/postgres-random-data-inserter">
+            source code for website
+          </a>
         </div>
       </div>
     </Layout>
